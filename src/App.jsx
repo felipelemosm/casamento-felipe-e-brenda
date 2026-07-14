@@ -7,6 +7,7 @@ import Cerimonia from './pages/Cerimonia.jsx'
 import Historia from './pages/Historia.jsx'
 import Informacoes from './pages/Informacoes.jsx'
 import Indicacoes from './pages/Indicacoes.jsx'
+import Caronas from './pages/Caronas.jsx'
 import Mensagens from './pages/Mensagens.jsx'
 import Presentes from './pages/Presentes.jsx'
 import Presenca from './pages/Presenca.jsx'
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/historia" element={<Historia />} />
           <Route path="/informacoes" element={<Informacoes />} />
           <Route path="/indicacoes" element={<Indicacoes />} />
+          <Route path="/caronas" element={<Caronas />} />
           <Route path="/mensagens" element={<Mensagens />} />
           <Route path="/presentes" element={<Presentes />} />
           <Route path="/presenca" element={<Presenca />} />

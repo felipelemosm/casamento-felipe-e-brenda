@@ -12,6 +12,7 @@ const MOBILE_ROUTES = [
   { to: '/', label: 'Início', end: true },
   { to: '/historia', label: 'Nossa História' },
   ...INFO_ROUTES,
+  { to: '/caronas', label: 'Caronas' },
   { to: '/mensagens', label: 'Mensagens' },
   { to: '/presentes', label: 'Presentes' },
 ]
@@ -75,6 +76,9 @@ export default function Nav() {
             )}
           </div>
 
+          <NavLink to="/caronas" className={({ isActive }) => (isActive ? 'active' : undefined)}>
+            Caronas
+          </NavLink>
           <NavLink to="/mensagens" className={({ isActive }) => (isActive ? 'active' : undefined)}>
             Mensagens
           </NavLink>

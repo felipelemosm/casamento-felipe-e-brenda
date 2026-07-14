@@ -1219,3 +1219,87 @@ main, .nav, .footer { position: relative; z-index: 1; }
   .messages-slideshow { padding: 1.3rem 1.1rem 1.2rem; }
   .footer-crest { height: 44px; }
 }
+
+/* ---------- Caronas ---------- */
+.caronas-subtitle {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--gold-dark);
+  margin: 0 0 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.caronas-subtitle::before, .caronas-subtitle::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gold-soft);
+}
+.caronas-list { margin-top: 1rem; }
+.caronas-empty {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.caronas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.2rem;
+  text-align: left;
+}
+.carona-card {
+  background: var(--paper);
+  border: 1px solid var(--gold-soft);
+  border-left: 3px solid var(--gold);
+  padding: 1.3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.carona-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.carona-icon { font-size: 1.6rem; line-height: 1; }
+.carona-nome { font-size: 1.2rem; color: var(--ink); }
+.carona-vagas {
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.carona-rota { font-size: 1.02rem; }
+.carona-horarios {
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+}
+.carona-obs {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.carona-wa {
+  align-self: flex-start;
+  margin-top: 0.3rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.72rem;
+}
+.caronas-form-wrap { margin-top: 3.4rem; }
+.carona-times {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.9rem;
+}
+.carona-aviso {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--gold);
+  background: var(--gold-wash);
+  padding: 0.6rem 0.9rem;
+}
+.carona-sent { text-align: center; }
+@media (max-width: 560px) {
+  .carona-times { grid-template-columns: 1fr; }
+}

@@ -20,11 +20,14 @@ Configuração única, ~5 minutos:
 
 7. Faça commit + push — o site publicado passa a gravar tudo na planilha.
 
-A planilha ganha duas abas:
+A planilha ganha três abas:
 
 - **Confirmações** — data, nome, contato, presença (Sim/Não), acompanhantes e mensagem.
 - **Mensagens** — data, nome, mensagem e a coluna **Exibir**: troque para "Não" em
   qualquer linha para tirar aquela mensagem do slideshow da home (moderação).
+- **Caronas** — data, nome, WhatsApp, origem, saída, chegada, vagas, observações e a
+  coluna **Exibir**: troque para "Não" quando as vagas acabarem ou a pedido do
+  motorista, e a carona sai do mural.
 
 Para pausar tudo, desative a implantação no Apps Script; para atualizar o código,
 use **Implantar → Gerenciar implantações → Editar → Nova versão**.
