@@ -18,7 +18,7 @@ const INFOS = [
     icon: '🥂',
     eyebrow: 'A celebração',
     title: 'Do civil ao café da tarde',
-    photoAlt: 'Mesa de café posta para a celebração',
+    photoAlt: 'Área da festa em Pitangui, com piscina e mesas',
     text: (
       <>
         <p>

@@ -84,7 +84,7 @@ const CHAPTERS = [
     slug: '2026-casamento',
     date: '10 · Outubro · 2026',
     title: 'O grande dia religioso',
-    text: 'Às 10h da manhã, na Capela Nossa Senhora da Conceição - Colégio Arnaldo, em Belo Horizonte, diante de Deus, da família e dos amigos, diremos “sim” para a vida inteira.',
+    text: 'Às 10h30 da manhã, na Capela Nossa Senhora da Conceição - Colégio Arnaldo, em Belo Horizonte, diante de Deus, da família e dos amigos, diremos “sim” para a vida inteira.',
   },
 ]
 
