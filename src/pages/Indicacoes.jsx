@@ -19,6 +19,12 @@ function mapsUrl(query) {
 
 const HOSPEDAGEM = [
   {
+    slug: 'hotel-monsenhor-vicente',
+    name: 'Pousada Monsenhor Vicente',
+    text: 'A nossa indicação principal: fica pertinho da casa da celebração — é onde estará a maior parte dos convidados.',
+    map: 'Pousada Monsenhor Vicente, Pitangui MG',
+  },
+  {
     slug: 'hotel-pousada-pilar',
     name: 'Pousada do Pilar',
     text: 'Pousada tradicional de Pitangui, no clima acolhedor da cidade histórica.',
