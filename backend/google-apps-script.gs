@@ -41,8 +41,9 @@ function doPost(e) {
         p.nome || '',
         p.whatsapp || '',
         p.origem || '',
-        p.saida || '',
-        p.chegada || '',
+        // apóstrofo força texto — sem ele o Sheets converte "07:00" em data de 1899
+        "'" + (p.saida || ''),
+        "'" + (p.chegada || ''),
         Number(p.vagas || 0),
         p.obs || '',
         'Sim',

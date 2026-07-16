@@ -3,7 +3,7 @@
 // Siga o passo a passo em backend/README.md e cole aqui a URL gerada
 // (termina em /exec). Enquanto estiver vazia, as páginas de confirmação e
 // mensagens exibem um aviso de "em breve".
-export const BACKEND_ENDPOINT = ''
+export const BACKEND_ENDPOINT = 'https://script.google.com/macros/s/AKfycby2217YS5jm2AYj_zmnt82dftDuWs0359KlT7I6iCDD5qmRlN2xczu8hY7cd0NNoL2zJA/exec'
 
 // ---------- Presentes ----------
 // Chave PIX dos noivos (aparece na janela de presente, com botão de copiar).

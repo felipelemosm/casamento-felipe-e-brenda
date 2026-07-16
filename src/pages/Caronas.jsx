@@ -11,6 +11,12 @@ const INITIAL = {
   obs: '',
 }
 
+// O Sheets pode converter "07:00" em data completa de 1899; extrai só o HH:mm.
+function formatHora(valor) {
+  const match = String(valor).match(/\b(\d{1,2}):(\d{2})/)
+  return match ? `${match[1].padStart(2, '0')}:${match[2]}` : String(valor)
+}
+
 function waLink(numero, nome) {
   let digits = numero.replace(/\D/g, '')
   if (!digits.startsWith('55') && digits.length <= 11) digits = `55${digits}`
@@ -106,7 +112,7 @@ export default function Caronas() {
                   <strong>{carona.origem}</strong> → Pitangui
                 </div>
                 <div className="carona-horarios">
-                  Saída {carona.saida} · chegada prevista {carona.chegada}
+                  Saída {formatHora(carona.saida)} · chegada prevista {formatHora(carona.chegada)}
                 </div>
                 {carona.obs && <p className="carona-obs">{carona.obs}</p>}
                 <a className="btn carona-wa" target="_blank" rel="noopener noreferrer"
