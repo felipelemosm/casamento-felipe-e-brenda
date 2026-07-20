@@ -65,6 +65,7 @@ const CHAPTERS = [
     date: '2023',
     title: 'O reencontro',
     text: 'Felipe voltou de vez para o Brasil, e pudemos viver o nosso amor de perto de novo.',
+    photoPosition: 'top',
   },
   {
     slug: '2024-formatura-ojdp',
@@ -88,14 +89,14 @@ const CHAPTERS = [
     slug: '2026-civil',
     date: '06 · Setembro · 2026',
     title: 'O casamento civil',
-    text: 'Às 11h de um domingo, em Pitangui, oficializamos nossa união cercados pela família — com festa até o café da tarde.',
+    text: 'Às 11h de um domingo, em Pitangui, oficializamos nossa união cercados pela família e pelos amigos — com festa até o café da tarde.',
     noPhoto: true,
   },
   {
     slug: '2026-casamento',
     date: '10 · Outubro · 2026',
     title: 'O grande dia religioso',
-    text: 'Na Capela Nossa Senhora da Conceição - Colégio Arnaldo, em Belo Horizonte, diante de Deus, da família e dos amigos, diremos “sim” para a vida inteira.',
+    text: 'Na Capela Nossa Senhora da Conceição - Colégio Arnaldo, em Belo Horizonte, diante de Deus e da família, diremos “sim” para a vida inteira.',
     noPhoto: true,
   },
 ]

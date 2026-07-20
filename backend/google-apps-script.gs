@@ -1,6 +1,6 @@
 /**
  * Back-end do site do casamento civil — Google Apps Script.
- * Recebe confirmações de presença (aba "Confirmações"), mensagens aos noivos
+ * Recebe registros de presentes (aba "Presentes"), confirmações de presença (aba "Confirmações"), mensagens aos noivos
  * (aba "Mensagens") e caronas (aba "Caronas"); devolve mensagens para o
  * slideshow da home e caronas para o mural.
  *
@@ -27,7 +27,17 @@ function doPost(e) {
   try {
     const p = e.parameter;
 
-    if (p.tipo === 'mensagem') {
+    if (p.tipo === 'presente') {
+      const sheet = getSheet('Presentes',
+        ['Data', 'Presente', 'Valor de referência (R$)', 'Nome', 'Dedicatória']);
+      sheet.appendRow([
+        new Date(),
+        p.presente || '',
+        Number(p.valor || 0),
+        p.nome || '',
+        p.dedicatoria || '',
+      ]);
+    } else if (p.tipo === 'mensagem') {
       const sheet = getSheet(MESSAGES_SHEET, ['Data', 'Nome', 'Mensagem', 'Exibir']);
       // Coluna "Exibir": troque para "Não" na planilha para tirar uma mensagem do site.
       sheet.appendRow([new Date(), p.nome || '', p.mensagem || '', 'Sim']);
