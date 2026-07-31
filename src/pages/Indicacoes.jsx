@@ -121,25 +121,6 @@ export default function Indicacoes() {
         items={HOSPEDAGEM}
       />
 
-      <div className="rec-group">
-        <div className="rec-group-eyebrow">Para se arrumar</div>
-        <h3 className="rec-group-title">Beleza no grande dia</h3>
-        <div className="beauty-card">
-          <div className="beauty-icon" aria-hidden="true">💄</div>
-          <div>
-            <h4 className="rec-name">Maquiadora indicada pelos noivos</h4>
-            <p className="rec-text">
-              Em breve divulgaremos aqui o contato da maquiadora — ela também atende
-              convidadas, mediante agendamento antecipado.
-            </p>
-            <p className="rec-text">
-              Uma dica: a cerimônia é às 11h de domingo e o comércio da cidade fecha
-              cedo — agende o horário com bastante antecedência.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <RecGroup
         eyebrow="Para conhecer"
         title="Passeios em Pitangui"
