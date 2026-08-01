@@ -1,24 +1,9 @@
-// Fotos ilustrativas: salve em src/assets/informacoes/ com o nome do bloco
-// (celebracao.jpg, traje.jpg, missa.jpg, domingo.jpg, pontualidade.jpg).
-const photos = import.meta.glob('../assets/informacoes/*.{jpg,jpeg,png,webp}', {
-  eager: true,
-  import: 'default',
-})
-
-function photoFor(slug) {
-  const entry = Object.entries(photos).find(([path]) =>
-    path.split('/').pop().replace(/\.(jpg|jpeg|png|webp)$/i, '') === slug,
-  )
-  return entry ? entry[1] : null
-}
-
 const INFOS = [
   {
     slug: 'celebracao',
     icon: '🥂',
     eyebrow: 'A celebração',
     title: 'Do civil ao café da tarde',
-    photoAlt: 'Área da festa em Pitangui, com piscina e mesas',
     text: (
       <>
         <p>
@@ -37,7 +22,6 @@ const INFOS = [
     icon: '👗',
     eyebrow: 'Traje',
     title: 'Esporte fino',
-    photoAlt: 'Trajes esporte fino',
     text: (
       <>
         <p>
@@ -56,7 +40,6 @@ const INFOS = [
     icon: '⛪',
     eyebrow: 'Preceito dominical',
     title: 'Missa no domingo',
-    photoAlt: 'Interior de uma igreja católica',
     text: (
       <>
         <p>
@@ -78,7 +61,6 @@ const INFOS = [
     icon: '🏪',
     eyebrow: 'A cidade no domingo',
     title: 'Pitangui fecha cedo',
-    photoAlt: 'Rua de cidade histórica mineira',
     text: (
       <>
         <p>
@@ -97,12 +79,11 @@ const INFOS = [
     icon: '🕰️',
     eyebrow: 'Pontualidade',
     title: 'Chegue com antecedência',
-    photoAlt: 'Relógio clássico marcando as horas',
     text: (
       <>
         <p>
           Planeje chegar com cerca de <strong>15 minutos de antecedência</strong>.
-          A cerimônia civil começará pontualmente às 11h.
+          A cerimônia civil começará por volta das 11h.
         </p>
       </>
     ),
@@ -122,27 +103,21 @@ export default function Informacoes() {
       </div>
 
       <div className="infos">
-        {INFOS.map((info, index) => {
-          const photo = photoFor(info.slug)
-          return (
-            <article className="info-block" key={info.slug}>
-              <div className="info-marker">
-                <span className="info-icon" aria-hidden="true">{info.icon}</span>
-              </div>
-              <div className="info-content">
-                <div className="info-eyebrow">{info.eyebrow}</div>
-                <h3 className="info-title">{info.title}</h3>
-                <div className="info-text">{info.text}</div>
-                {photo && (
-                  <img className="info-photo" src={photo} alt={info.photoAlt} loading="lazy" />
-                )}
-              </div>
-              {index < INFOS.length - 1 && (
-                <div className="info-divider" aria-hidden="true">❦</div>
-              )}
-            </article>
-          )
-        })}
+        {INFOS.map((info, index) => (
+          <article className="info-block" key={info.slug}>
+            <div className="info-marker">
+              <span className="info-icon" aria-hidden="true">{info.icon}</span>
+            </div>
+            <div className="info-content">
+              <div className="info-eyebrow">{info.eyebrow}</div>
+              <h3 className="info-title">{info.title}</h3>
+              <div className="info-text">{info.text}</div>
+            </div>
+            {index < INFOS.length - 1 && (
+              <div className="info-divider" aria-hidden="true">❦</div>
+            )}
+          </article>
+        ))}
       </div>
     </section>
   )
