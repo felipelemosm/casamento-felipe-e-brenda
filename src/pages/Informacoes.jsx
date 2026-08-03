@@ -1,23 +1,5 @@
 const INFOS = [
   {
-    slug: 'celebracao',
-    icon: '🥂',
-    eyebrow: 'A celebração',
-    title: 'Do civil ao café da tarde',
-    text: (
-      <>
-        <p>
-          A cerimônia civil será às <strong>11h de domingo</strong> e, logo depois, no
-          mesmo endereço, servimos o almoço.
-        </p>
-        <p>
-          A festa segue à tarde e se estende até o <strong>café da tarde</strong> —
-          reserve o domingo inteiro para celebrar com a gente.
-        </p>
-      </>
-    ),
-  },
-  {
     slug: 'traje',
     icon: '👗',
     eyebrow: 'Traje',
@@ -36,22 +18,15 @@ const INFOS = [
     ),
   },
   {
-    slug: 'missa',
-    icon: '⛪',
-    eyebrow: 'Preceito dominical',
-    title: 'Missa no domingo',
+    slug: 'pontualidade',
+    icon: '🕰️',
+    eyebrow: 'Pontualidade',
+    title: 'Chegue com antecedência',
     text: (
       <>
         <p>
-          Como a festa é num domingo, lembramos com carinho os convidados católicos do
-          preceito dominical. A <strong>Matriz Nossa Senhora do Pilar</strong>
-          {' '}(Praça Getúlio Vargas, centro de Pitangui, a poucos minutos do local) tem
-          missas aos domingos.
-        </p>
-        <p>
-          Os horários de referência são <strong>7h, 9h e 19h</strong> — a das 19h
-          combina bem com o fim do café da tarde. Confirme com a paróquia:
-          (37) 3271-4005.
+          Planeje chegar com cerca de <strong>15 minutos de antecedência</strong>.
+          A cerimônia civil começará por volta das 11h.
         </p>
       </>
     ),
@@ -75,15 +50,40 @@ const INFOS = [
     ),
   },
   {
-    slug: 'pontualidade',
-    icon: '🕰️',
-    eyebrow: 'Pontualidade',
-    title: 'Chegue com antecedência',
+    slug: 'celebracao',
+    icon: '🥂',
+    eyebrow: 'A celebração',
+    title: 'Do civil ao café da tarde',
     text: (
       <>
         <p>
-          Planeje chegar com cerca de <strong>15 minutos de antecedência</strong>.
-          A cerimônia civil começará por volta das 11h.
+          A cerimônia civil será às <strong>11h de domingo</strong> e, logo depois, no
+          mesmo endereço, servimos o almoço.
+        </p>
+        <p>
+          A festa segue à tarde e se estende até o <strong>café da tarde</strong> —
+          reserve o domingo inteiro para celebrar com a gente.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: 'missa',
+    icon: '⛪',
+    eyebrow: 'Preceito dominical',
+    title: 'Missa no domingo',
+    text: (
+      <>
+        <p>
+          Como a festa é num domingo, lembramos com carinho os convidados católicos do
+          preceito dominical. A <strong>Matriz Nossa Senhora do Pilar</strong>
+          {' '}(Praça Getúlio Vargas, centro de Pitangui, a poucos minutos do local) tem
+          missas aos domingos.
+        </p>
+        <p>
+          Os horários de referência são <strong>7h, 9h e 19h</strong> — a das 19h
+          combina bem com o fim do café da tarde. Confirme com a paróquia:
+          (37) 3271-4005.
         </p>
       </>
     ),
