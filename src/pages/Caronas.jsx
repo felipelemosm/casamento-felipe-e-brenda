@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Spinner from '../components/Spinner.jsx'
 import { BACKEND_ENDPOINT } from '../config.js'
 
 const INITIAL = {
@@ -90,7 +91,7 @@ export default function Caronas() {
       <div className="caronas-list">
         <h3 className="caronas-subtitle">Caronas publicadas</h3>
         {caronas === null ? (
-          <p className="weather-loading">Carregando caronas…</p>
+          <Spinner label="Carregando caronas…" />
         ) : caronas.length === 0 ? (
           <p className="caronas-empty">
             Nenhuma carona publicada ainda — seja a primeira pessoa a oferecer! 💛

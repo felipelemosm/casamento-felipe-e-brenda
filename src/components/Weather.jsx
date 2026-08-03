@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Spinner from './Spinner.jsx'
 
 // Pitangui, MG
 const LAT = -19.6828
@@ -144,7 +145,7 @@ export default function Weather() {
       <div className="weather-title">O tempo na semana da festa — Pitangui</div>
 
       {!days ? (
-        <p className="weather-loading">Consultando o céu de setembro…</p>
+        <Spinner label="Consultando o céu de setembro…" />
       ) : (
         <>
           {willRain !== null && (
