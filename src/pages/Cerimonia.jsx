@@ -12,6 +12,7 @@ export default function Cerimonia() {
     <section className="section">
       <div className="section-eyebrow">O grande dia</div>
       <h2 className="section-title script">A Celebração</h2>
+      <div className="ceremony-time">Domingo, 6 de setembro de 2026 · às 11h</div>
       <div className="section-intro">
         <p className="section-sub">
           A cerimônia civil acontecerá em Pitangui-MG, às <strong>11h da manhã de

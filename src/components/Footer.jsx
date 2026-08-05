@@ -8,6 +8,7 @@ export default function Footer() {
         Felipe <span className="amp">&amp;</span> Brenda
       </div>
       <div className="footer-note">06 · 09 · 2026 — Pitangui · MG</div>
+      <div className="footer-hora">Cerimônia às 11h</div>
     </footer>
   )
 }
