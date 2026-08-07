@@ -121,3 +121,49 @@ function doGet(e) {
 
   return ContentService.createTextOutput('Site Felipe & Brenda (civil): back-end no ar ✔');
 }
+
+// ---------------------------------------------------------------------------
+// UTILITÁRIO (rodar UMA vez, à mão): envia as mensagens já deixadas nas
+// confirmações deste site (aba "Confirmações") para o mural UNIFICADO, que fica
+// na planilha do site religioso. Marca cada linha migrada na coluna
+// "Migrada p/ mural" — pode rodar de novo sem duplicar.
+// Como rodar: no editor do Apps Script, selecione a função
+// "enviarMensagensDasConfirmacoesAoMural" no topo e clique em ▷ Executar.
+// ---------------------------------------------------------------------------
+function enviarMensagensDasConfirmacoesAoMural() {
+  // endpoint do mural (Apps Script do site religioso)
+  const MURAL_ENDPOINT = 'https://script.google.com/macros/s/AKfycbybC6c9D1RjAci0Fz0JGmzzjU8HKQr2oF4q-trkIEN33NX1GkiEy06-pOy-BddInP3T/exec';
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const rsvp = ss.getSheetByName(RSVP_SHEET);
+  if (!rsvp || rsvp.getLastRow() < 2) {
+    Logger.log('Nenhuma confirmação para migrar.');
+    return;
+  }
+
+  // garante uma coluna de controle "Migrada p/ mural"
+  const lastCol = rsvp.getLastColumn();
+  const header = rsvp.getRange(1, 1, 1, lastCol).getValues()[0];
+  let ctrlCol = header.indexOf('Migrada p/ mural') + 1;
+  if (ctrlCol === 0) {
+    ctrlCol = lastCol + 1;
+    rsvp.getRange(1, ctrlCol).setValue('Migrada p/ mural');
+  }
+
+  const rows = rsvp.getRange(2, 1, rsvp.getLastRow() - 1, Math.max(6, ctrlCol)).getValues();
+  let enviadas = 0;
+  for (let i = 0; i < rows.length; i++) {
+    const nome = String(rows[i][1] || '').trim();
+    const msg = String(rows[i][5] || '').trim();
+    const jaMigrada = String(rows[i][ctrlCol - 1] || '').toLowerCase() === 'sim';
+    if (!msg || jaMigrada) continue;
+    UrlFetchApp.fetch(MURAL_ENDPOINT, {
+      method: 'post',
+      payload: { tipo: 'mensagem', nome: nome, mensagem: msg },
+      muteHttpExceptions: true,
+    });
+    rsvp.getRange(i + 2, ctrlCol).setValue('Sim');
+    enviadas++;
+    Utilities.sleep(400);
+  }
+  Logger.log('Mensagens enviadas ao mural: ' + enviadas);
+}
