@@ -71,6 +71,33 @@ const PASSEIOS = [
   },
 ]
 
+const EXTRAS = [
+  {
+    slug: 'extra-padaria-silva',
+    name: 'Quitanda mineira na Panificadora Silva',
+    text: 'Bem em frente à Matriz, é a parada certa para provar o famoso biscoito de queijo e as quitandas caseiras — broas, roscas, tarecos — com aquela cortesia mineira. Perfeita para um café da manhã de verdade.',
+    map: 'Panificadora Silva, Pitangui MG',
+  },
+  {
+    slug: 'extra-day-use-fazenda',
+    name: 'Day use no Hotel Fazenda Santa Felicidade',
+    text: 'Logo na entrada da cidade (BR-352), oferece day use com piscina, área de lazer e almoço — ótimo para relaxar em família antes ou depois da festa. Reserve pelo WhatsApp: (37) 99976-3505.',
+    map: 'Hotel Fazenda Santa Felicidade, Pitangui MG',
+  },
+  {
+    slug: 'extra-nova-serrana',
+    name: 'Nova Serrana, a capital do calçado',
+    text: 'A cerca de 33 km (uns 40 min) de Pitangui, reúne mais de 1.200 fábricas e lojas de tênis e calçados a preço de fábrica. Muitas abrem aos sábados com pronta entrega no varejo — um prato cheio para quem gosta de garimpar.',
+    map: 'Nova Serrana MG',
+  },
+  {
+    slug: 'extra-santuario-conceicao',
+    name: 'Santuário de Nossa Senhora da Conceição do Pará',
+    text: 'Na vizinha Conceição do Pará, é um santuário diocesano e importante ponto de devoção e romaria na região — uma bela parada de fé para quem quiser.',
+    map: 'Santuário Nossa Senhora da Conceição, Conceição do Pará MG',
+  },
+]
+
 function RecCard({ item }) {
   const photo = photoFor(item.slug)
   return (
@@ -126,6 +153,13 @@ export default function Indicacoes() {
         title="Passeios em Pitangui"
         sub="A cidade mais antiga da região central de Minas, fundada em 1715."
         items={PASSEIOS}
+      />
+
+      <RecGroup
+        eyebrow="Sabores, lazer e arredores"
+        title="Mais dicas na região"
+        sub="De um café da manhã mineiro a um day use — e às cidades vizinhas que valem a visita."
+        items={EXTRAS}
       />
     </section>
   )
