@@ -5,6 +5,7 @@ import FloralBackdrop from './components/FloralBackdrop.jsx'
 import Home from './pages/Home.jsx'
 import Cerimonia from './pages/Cerimonia.jsx'
 import Historia from './pages/Historia.jsx'
+import Mural from './pages/Mural.jsx'
 import Informacoes from './pages/Informacoes.jsx'
 import Indicacoes from './pages/Indicacoes.jsx'
 import Caronas from './pages/Caronas.jsx'
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cerimonia" element={<Cerimonia />} />
           <Route path="/historia" element={<Historia />} />
+          <Route path="/mural" element={<Mural />} />
           <Route path="/informacoes" element={<Informacoes />} />
           <Route path="/indicacoes" element={<Indicacoes />} />
           <Route path="/caronas" element={<Caronas />} />
