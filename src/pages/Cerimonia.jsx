@@ -1,5 +1,6 @@
 import Weather from '../components/Weather.jsx'
 import VenueCard from '../components/VenueCard.jsx'
+import LocalGaleria from '../components/LocalGaleria.jsx'
 
 const photos = import.meta.glob('../assets/locais/local-civil*.{jpg,jpeg,png,webp}', {
   eager: true,
@@ -35,6 +36,8 @@ export default function Cerimonia() {
         wazeQuery="Rua Antônio Figueiras 127 Pitangui MG"
         mapTitle="Mapa do local da celebração em Pitangui"
       />
+
+      <LocalGaleria />
 
       <Weather />
     </section>

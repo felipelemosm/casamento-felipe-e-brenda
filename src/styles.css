@@ -1644,6 +1644,12 @@ main, .nav, .footer { position: relative; z-index: 1; }
 }
 .galeria-dots .dot.active { background: var(--gold-deep); transform: scale(1.3); }
 
+/* Galeria do espaço (Cerimônia): a maioria das fotos é retrato, então o palco
+   é mais alto (4/5) em vez do 3/2 padrão. A foto paisagem recorta as laterais
+   no palco, mas o clique abre a versão inteira no lightbox. */
+.venue-galeria { max-width: 520px; }
+.venue-galeria .galeria-stage { aspect-ratio: 4 / 5; }
+
 /* ---------- Mural de fotos (pré-wedding) ---------- */
 .mural-featured {
   position: relative;
