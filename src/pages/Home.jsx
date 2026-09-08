@@ -19,7 +19,7 @@ export default function Home() {
 
       <p className="hero-invite">
         “Amamos, porque Deus nos amou primeiro”
-        <span className="hero-invite-ref">São João 4, 19</span>
+        <span className="hero-invite-ref">1 João 4, 19</span>
       </p>
 
       <MessagesSlideshow />

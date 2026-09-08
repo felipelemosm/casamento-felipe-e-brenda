@@ -1443,7 +1443,7 @@ main, .nav, .footer { position: relative; z-index: 1; }
   .mural-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 4px; }
   .mural-featured { height: min(62vh, 460px); }
 }
-/* ---------- Presentes: PIX preferencial e cartão ---------- */
+/* ---------- Presentes: aviso do PIX ---------- */
 .gift-pix-note {
   max-width: 620px;
   margin: 0.4rem auto 0;
@@ -1453,47 +1453,6 @@ main, .nav, .footer { position: relative; z-index: 1; }
   font-size: 0.98rem;
   color: var(--ink);
 }
-.modal-card {
-  margin-top: 1.1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--gold-soft);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-.modal-or {
-  font-size: 0.82rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-.modal-card .btn.ghost {
-  border: 1px solid var(--gold-deep);
-  cursor: pointer;
-}
-.modal-card-note {
-  font-size: 0.86rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  line-height: 1.5;
-}
-
-/* ---------- Modal de confirmação de pagamento no cartão ---------- */
-.modal-confirm-q {
-  margin: 0.6rem 0 1rem;
-  text-align: center;
-  font-size: 1.05rem;
-  color: var(--gold-deep);
-}
-.modal-confirm-actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 0.9rem 0 0.6rem;
-}
-
 /* ---------- Indicador de carregamento (spinner) ---------- */
 .loading-box {
   display: flex;
@@ -1635,12 +1594,22 @@ main, .nav, .footer { position: relative; z-index: 1; }
   margin: 0.4rem auto 1.6rem;
   max-width: 460px;
 }
-.footer-hora {
-  font-size: 0.82rem;
-  letter-spacing: 0.24em;
+.footer-verse {
+  max-width: 420px;
+  margin: 0.9rem auto 0;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--gold-deep);
+}
+.footer-verse-ref {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.74rem;
+  font-style: normal;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--gold-deep);
-  margin-top: 0.35rem;
 }
 /* ---------- Mural da home: navegação por setas ---------- */
 .messages-viewer {

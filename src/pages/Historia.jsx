@@ -91,7 +91,16 @@ const CHAPTERS = [
     slug: '2026-pedido',
     date: '2026',
     title: 'O nosso “sim” definitivo',
-    text: 'Após uma nova oportunidade profissional para Felipe e a reta final da graduação da Brenda, entendemos que havia chegado o momento de dar o próximo passo. Veio o pedido de casamento, o noivado, mais um breve período de distância entre São Paulo e Guaranésia e, finalmente, a realização do grande sonho. Primeiro, o casamento civil em Pitangui, cercados pela família e pelos amigos; depois, diante de Deus, na Capela Nossa Senhora da Conceição, em Belo Horizonte, onde diremos o nosso eterno “sim”, iniciando juntos a missão de ajudar um ao outro a chegar ao Céu.',
+    text: 'Após uma nova oportunidade profissional para Felipe e a reta final da graduação da Brenda, entendemos que havia chegado o momento de dar o próximo passo. Veio o pedido de casamento, o noivado, mais um breve período de distância entre São Paulo e Guaranésia e, finalmente, a certeza de que o grande sonho estava próximo.',
+  },
+  {
+    // Quando chegarem as fotos do dia, salve-as em
+    // src/assets/historia/2026-casamento-civil.jpg e remova o `noPhoto`.
+    slug: '2026-casamento-civil',
+    date: '06 · 09 · 2026',
+    title: 'Já somos casados!',
+    text: 'Em Pitangui, cercados pela família e pelos amigos, dissemos “sim” no civil e nos tornamos marido e mulher. Foi um domingo de festa, que começou na cerimônia das 11h e se estendeu pelo almoço até o café da tarde. Agora seguimos rumo ao dia 10 de outubro, quando levaremos esse “sim” diante de Deus, na Capela Nossa Senhora da Conceição, em Belo Horizonte, iniciando juntos a missão de ajudar um ao outro a chegar ao Céu.',
+    noPhoto: true,
   },
 ]
 
