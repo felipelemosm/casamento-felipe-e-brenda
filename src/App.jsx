@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 import FloralBackdrop from './components/FloralBackdrop.jsx'
@@ -8,10 +8,8 @@ import Historia from './pages/Historia.jsx'
 import Mural from './pages/Mural.jsx'
 import Informacoes from './pages/Informacoes.jsx'
 import Indicacoes from './pages/Indicacoes.jsx'
-import Caronas from './pages/Caronas.jsx'
 import Mensagens from './pages/Mensagens.jsx'
 import Presentes from './pages/Presentes.jsx'
-import Presenca from './pages/Presenca.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import { LightboxProvider } from './components/Lightbox.jsx'
 
@@ -29,10 +27,11 @@ export default function App() {
           <Route path="/mural" element={<Mural />} />
           <Route path="/informacoes" element={<Informacoes />} />
           <Route path="/indicacoes" element={<Indicacoes />} />
-          <Route path="/caronas" element={<Caronas />} />
           <Route path="/mensagens" element={<Mensagens />} />
           <Route path="/presentes" element={<Presentes />} />
-          <Route path="/presenca" element={<Presenca />} />
+          {/* /caronas e /presenca saíram do ar depois da celebração; quem tiver
+              o link antigo salvo cai no início em vez de numa página vazia. */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />

@@ -1,4 +1,3 @@
-import Weather from '../components/Weather.jsx'
 import VenueCard from '../components/VenueCard.jsx'
 import LocalGaleria from '../components/LocalGaleria.jsx'
 
@@ -38,8 +37,6 @@ export default function Cerimonia() {
       />
 
       <LocalGaleria />
-
-      <Weather />
     </section>
   )
 }

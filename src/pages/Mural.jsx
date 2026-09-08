@@ -71,6 +71,11 @@ export default function Mural() {
         </p>
       </div>
 
+      <p className="photos-soon">
+        As fotos do dia 6 de setembro estarão aqui em breve. Assim que recebermos o
+        material dos fotógrafos, publicamos tudo neste mural.
+      </p>
+
       <div className="mural-featured zoomable" onClick={expandFeatured}
         role="button" tabIndex={0} aria-label="Ampliar foto em destaque"
         onKeyDown={(event) => {

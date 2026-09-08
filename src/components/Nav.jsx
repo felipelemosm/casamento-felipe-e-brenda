@@ -13,7 +13,6 @@ const MOBILE_ROUTES = [
   { to: '/historia', label: 'Nossa História' },
   { to: '/mural', label: 'Fotos' },
   ...INFO_ROUTES,
-  { to: '/caronas', label: 'Caronas' },
   { to: '/mensagens', label: 'Mensagens' },
   { to: '/presentes', label: 'Presentes' },
 ]
@@ -80,17 +79,11 @@ export default function Nav() {
             )}
           </div>
 
-          <NavLink to="/caronas" className={({ isActive }) => (isActive ? 'active' : undefined)}>
-            Caronas
-          </NavLink>
           <NavLink to="/mensagens" className={({ isActive }) => (isActive ? 'active' : undefined)}>
             Mensagens
           </NavLink>
           <NavLink to="/presentes" className={({ isActive }) => (isActive ? 'active' : undefined)}>
             Presentes
-          </NavLink>
-          <NavLink to="/presenca" className={({ isActive }) => `nav-cta${isActive ? ' active' : ''}`}>
-            Confirmar Presença
           </NavLink>
         </div>
 
@@ -111,9 +104,6 @@ export default function Nav() {
               {label}
             </NavLink>
           ))}
-          <NavLink to="/presenca" className="nav-mobile-cta">
-            Confirmar Presença
-          </NavLink>
         </div>
       )}
     </nav>

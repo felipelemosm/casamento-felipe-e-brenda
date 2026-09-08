@@ -6,13 +6,16 @@ vive em `felipelemosm/felipe-e-brenda`). Mesma identidade visual: brasão dourad
 
 Diferenças em relação ao site do religioso:
 
-- Data/hora: **domingo, 6 de setembro de 2026, 11h** (contagem regressiva e clima ajustados)
+- Data/hora: **domingo, 6 de setembro de 2026, 11h**
 - Local único: Rua Antônio Figueiras, 127 — Pitangui · MG (cerimônia + almoço + festa
   até o café da tarde; não há página de Recepção)
-- Previsão do tempo: semana de 03–09/09 em **Pitangui**
 - Informações Importantes: traje esporte fino, preceito dominical (missas na Matriz
   Nossa Senhora do Pilar), aviso de comércio fechado no domingo
 - Indicações: pousadas e passeios de **Pitangui**
+
+Depois da celebração (08/09/2026) saíram do site as páginas de Caronas e de
+Confirmação de Presença e o quadro de previsão do tempo — o site do religioso
+mantém as três.
 
 ## Rodar localmente
 
@@ -21,7 +24,7 @@ npm install
 npm run dev      # abre em http://localhost:5173
 ```
 
-## Confirmações de presença (RSVP) e mensagens
+## Mensagens aos noivos
 
 Usa uma **planilha separada** da do religioso: crie um segundo Apps Script seguindo
 `backend/README.md` e cole a URL em `src/config.js` (`BACKEND_ENDPOINT`).
