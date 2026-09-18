@@ -89,6 +89,11 @@ const CATEGORIES = [
       { slug: 'saleiro-pimenteiro', name: 'Saleiro e pimenteiro', price: 80 },
       { slug: 'descanso-panela', name: 'Descanso de panela', price: 75 },
       { slug: 'panos-prato', name: 'Kit de panos de prato', price: 65 },
+      { slug: 'cafeteira', name: 'Cafeteira elétrica', price: 250 },
+      { slug: 'processador-alimentos', name: 'Processador de alimentos', price: 350 },
+      { slug: 'mixer', name: 'Mixer de mão', price: 180 },
+      { slug: 'garrafa-termica', name: 'Garrafa térmica', price: 160 },
+      { slug: 'jogo-tigelas', name: 'Jogo de tigelas de vidro', price: 150 },
     ],
   },
   {
@@ -109,6 +114,9 @@ const CATEGORIES = [
       { slug: 'porta-retratos', name: 'Porta-retratos', price: 140 },
       { slug: 'difusor-aromas', name: 'Difusor de aromas', price: 120 },
       { slug: 'porta-copos', name: 'Kit de porta-copos', price: 90 },
+      { slug: 'puff', name: 'Puff decorativo', price: 300 },
+      { slug: 'mesa-centro', name: 'Mesa de centro', price: 400 },
+      { slug: 'luminaria-mesa', name: 'Luminária de mesa', price: 200 },
     ],
   },
   {
@@ -128,6 +136,9 @@ const CATEGORIES = [
       { slug: 'lencois-avulsos', name: 'Lençol avulso', price: 200 },
       { slug: 'organizador-sapatos', name: 'Organizador de sapatos', price: 120 },
       { slug: 'cabides', name: 'Kit de cabides', price: 90 },
+      { slug: 'cobertor', name: 'Cobertor casal', price: 250 },
+      { slug: 'umidificador', name: 'Umidificador de ar', price: 250 },
+      { slug: 'penteadeira', name: 'Penteadeira com espelho', price: 400 },
     ],
   },
   {
@@ -143,6 +154,9 @@ const CATEGORIES = [
       { slug: 'tapete-antiderrapante', name: 'Tapete antiderrapante para box', price: 100 },
       { slug: 'saboneteira', name: 'Kit saboneteira e dispenser', price: 90 },
       { slug: 'porta-escovas', name: 'Porta-escovas de dente', price: 80 },
+      { slug: 'secador-cabelo', name: 'Secador de cabelo', price: 200 },
+      { slug: 'balanca-digital', name: 'Balança digital', price: 150 },
+      { slug: 'espelho-led', name: 'Espelho com LED', price: 180 },
     ],
   },
   {
@@ -157,6 +171,7 @@ const CATEGORIES = [
       { slug: 'rodo-vassoura', name: 'Kit rodo e vassoura', price: 120 },
       { slug: 'pregadores', name: 'Kit de prendedores', price: 90 },
       { slug: 'panos-limpeza', name: 'Kit de panos de limpeza', price: 80 },
+      { slug: 'vaporizador-roupas', name: 'Vaporizador de roupas', price: 200 },
     ],
   },
 ]
